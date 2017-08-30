@@ -9,7 +9,7 @@ var firstQuestion = {
     question1: "Who wrote Pride and Prejudice?",
     answer: "Jane Austen",
     firstFalseAnswer: "J.K. Rowling",
-    secondFalseAnswer: "Stephen King",
+    secondFalseAnswer: "Charlote Bronte",
 
     //function
         //if (userGuess == answer) {
