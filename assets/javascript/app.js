@@ -10,7 +10,15 @@ var firstQuestion = {
     answer: "Jane Austen",
     firstFalseAnswer: "J.K. Rowling",
     secondFalseAnswer: "Stephen King",
-
+    //function
+        //if (userGuess == answer) {
+            //console.log("Correct!");
+        //} else if(user guess == firstFalseAnswer || secondFalseAnswer){
+            //console.log("Wrong!");
+        //} else {
+            //timer gets to 0, goes to answer page automatically
+            //console.log("sorry, time's up");
+        //}
 };
 
 var secondQuestion = {
@@ -18,6 +26,15 @@ var secondQuestion = {
     answer: "A Christmas Carol",
     firstFalseAnswer: "Oliver Twist",
     secondFalseAnswer: "Great Expectations",
+    //function
+        //if (userGuess == answer) {
+            //console.log("Correct!");
+        //} else if(user guess == firstFalseAnswer || secondFalseAnswer){
+            //console.log("Wrong!");
+        //} else {
+            //timer gets to 0, goes to answer page automatically
+            //console.log("sorry, time's up");
+        //}
 };
 
 var thirdQuestion = {
@@ -25,11 +42,28 @@ var thirdQuestion = {
     answer: "1997",
     firstFalseAnswer: "2001",
     secondFalseAnswer: "2010",
-
+    //function
+        //if (userGuess == answer) {
+            //console.log("Correct!");
+        //} else if(user guess == firstFalseAnswer || secondFalseAnswer){
+            //console.log("Wrong!");
+        //} else {
+            //timer gets to 0, goes to answer page automatically
+            //console.log("sorry, time's up");
+        //}
 };
 var fourthQuestion = {
     question4: "What is Florida author Zora Neale Hurston\s most famous work?",
     answer: "Their Eyes Were Watching God",
     firstFalseAnswer: "Jonah's Gourd Vine",
     secondFalseAnswer: "Mules and Men",
+    //function
+        //if (userGuess == answer) {
+            //console.log("Correct!");
+        //} else if(user guess == firstFalseAnswer || secondFalseAnswer){
+            //console.log("Wrong!");
+        //} else {
+            //timer gets to 0, goes to answer page automatically
+            //console.log("sorry, time's up");
+        //}
 }
