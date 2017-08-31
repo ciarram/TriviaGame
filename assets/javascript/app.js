@@ -4,6 +4,33 @@ $(document).ready(function(){
 
 //Timer
 
+var number = 5;
+    console.log(number);
+var numberHolder;
+
+function stopQuestion(){
+    numberHolder = setInterval(decrement, 1000);
+    console.log(numberHolder);
+}
+
+function decrement(){
+    number--;
+    console.log(number--);
+    //$("#timer").html("<h3>" + number + "</h3>");
+    if (number === 0) {
+        console.log(stop);
+        stop();
+    }
+}
+function timer(){
+    numberHolder = setInterval(decrement, 1000);
+    console.log(numberHolder);
+}
+function stop(){
+    clearInterval(numberHolder);
+}
+
+
 //Variables
 var win = 0;
 var loss = 0;
@@ -63,31 +90,29 @@ myQuestions();
 $("#first-answer").on('click', function(){
     //console.log('That is your guess');
     if(arrayOfQuestions[index].correct == 1){
-        console.log('good');
+        console.log('correct');
+        //$("section").html("Correct!")
     } else{
-        console.log('bad');
+        console.log('incorrect');
+        //$("section").html("Wrong! The correct answer is: ")
     }
     //index increment
     index++;
 if(index == endOfGame){
     index = 0;
-}
-    
-
-    myQuestions();
-
-    
-    // if the index == end_of_game then call end function
-    // else call function that displays Q and answer
-    //$("#first-answer").html(firstAnswers[index]);
+} 
+ myQuestions();
+   
 });
 
 $('#second-answer').on('click', function(){
     //console.log('That is your second guess');
     if(arrayOfQuestions[index].correct == 2){
-        console.log('good');
+        console.log('correct');
+        //$("#question").html("Correct!")
     } else{
-        console.log('bad');
+        console.log('incorrect');
+        //$("#question").html("Wrong! The correct answer is: ")
     }
     index++;
     if(index == endOfGame){
@@ -100,9 +125,9 @@ $('#second-answer').on('click', function(){
 $('#third-answer').on('click', function(){
     //console.log('That is your third guess');
     if(arrayOfQuestions[index].correct == 3){
-        console.log('good');
+        console.log('correct');
     } else{
-        console.log('bad');
+        console.log('incorrect');
     }
     index++;
     if(index == endOfGame){
