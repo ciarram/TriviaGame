@@ -91,9 +91,13 @@ $("#first-answer").on('click', function(){
     //console.log('That is your guess');
     if(arrayOfQuestions[index].correct == 1){
         console.log('correct');
+        //wins++
+        //console.log(wins++);
         //$("section").html("Correct!")
     } else{
         console.log('incorrect');
+        //loss++
+        //console.log(loss++);
         //$("section").html("Wrong! The correct answer is: ")
     }
     //index increment
@@ -110,9 +114,13 @@ $('#second-answer').on('click', function(){
     if(arrayOfQuestions[index].correct == 2){
         console.log('correct');
         //$("#question").html("Correct!")
+        //wins++
+        //console.log(wins++);
     } else{
         console.log('incorrect');
         //$("#question").html("Wrong! The correct answer is: ")
+        //loss++
+        //console.log(loss++);
     }
     index++;
     if(index == endOfGame){
@@ -126,8 +134,12 @@ $('#third-answer').on('click', function(){
     //console.log('That is your third guess');
     if(arrayOfQuestions[index].correct == 3){
         console.log('correct');
+         //wins++
+         //console.log(wins++);
     } else{
         console.log('incorrect');
+        //loss++
+        //console.log(loss++);
     }
     index++;
     if(index == endOfGame){
@@ -138,17 +150,6 @@ $('#third-answer').on('click', function(){
 });
 
 
-    //console.log(secondQuestion.question2);
-    //console.log(secondQuestion.firstFalseAnswer);
-
-
-    //console.log(thirdQuestion.question3);
-    //console.log(thirdQuestion.secondFalseAnswer);
-
-//console.log(fourthQuestion.question4);
-//console.log(fourthQuestion.answer);
-//console.log(fourthQuestion.firstFalseAnswer);
-//console.log(fourthQuestion.secondFalseAnswer);
 
 
 });
