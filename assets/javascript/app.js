@@ -37,48 +37,54 @@ var loss = 0;
 var unanswered = 0;
 var index = 0;
 var arrayOfQuestions = [];
+var correct = [];
+var firstIncorrect = [];
+var secondIncorrect = [];
 var endOfGame = 4;
 
 //Questions
 var firstQuestion = {
     question: "Who wrote Pride and Prejudice?",
-    firstAnswer: "J.K. Rowling",
-    secondAnswer: "Jane Austen",
-    thirdAnswer: "Charlote Bronte",
-    correct: 2,
+    incorrectAnswer: "J.K. Rowling",
+    correctAnswer: "Jane Austen",
+    secondIncorrectAnswer: "Charlote Bronte",
 }
 var secondQuestion = {
     question: "Which Charles Dickens work has over 100 movie adaptations?",
-    firstAnswer: "Great Expectations",
-    secondAnswer: "Oliver Twist",
-    thirdAnswer: "A Christmas Carol",
-    correct: 3,
+    incorrectAnswer: "Great Expectations",
+    secondIncorrectAnswer: "Oliver Twist",
+    correctAnswer: "A Christmas Carol",
 };
 var thirdQuestion = {
     question: "When was the first Harry Potter book published?",
-    firstAnswer: "1997",
-    secondAnswer: "2010",
-    thirdAnswer: "2001",
-    correct: 1,
+    correctAnswer: "1997",
+    incorrectAnswer: "2010",
+    secondIncorrectAnswer: "2001",
 };
 var fourthQuestion = {
     question: "What is Florida author Zora Neale Hurston\s most famous work?",
-    firstAnswer: "Mules and Men",
-    secondAnswer: "Their Eyes Were Watching God",
-    thirdAnswer: "Jonah's Gourd Vine",
-    correct: 2,
+    incorrectAnswer: "Mules and Men",
+    correctAnswer: "Their Eyes Were Watching God",
+    secondIncorrectAnswer: "Jonah's Gourd Vine",
 }
 
-arrayOfQuestions.push(firstQuestion);
-arrayOfQuestions.push(secondQuestion);
-arrayOfQuestions.push(thirdQuestion);
-arrayOfQuestions.push(fourthQuestion);
+arrayOfQuestions.push(firstQuestion.question);
+arrayOfQuestions.push(secondQuestion.question);
+arrayOfQuestions.push(thirdQuestion.question);
+arrayOfQuestions.push(fourthQuestion.question);
+console.log(arrayOfQuestions);
+
+correct.push(firstQuestion.correctAnswer);
+correct.push(secondQuestion.correctAnswer);
+correct.push(thirdQuestion.correctAnswer);
+correct.push(fourthQuestion.correctAnswer);
+console.log(correct);
 
 function myQuestions(){
-$("#question").html(arrayOfQuestions[index].question);
-$("#first-answer").html(arrayOfQuestions[index].firstAnswer);
-$("#second-answer").html(arrayOfQuestions[index].secondAnswer);
-$("#third-answer").html(arrayOfQuestions[index].thirdAnswer);
+$("#question").append(arrayOfQuestions);
+$("#first-answer").append(correct[index].correctAnswer);
+$("#incorrect-answer").append(arrayOfQuestions[index].incorrectAnswer);
+$("#second-incorrect-answer").append(arrayOfQuestions[index].secondIncorrectAnswer);
 }
 
 myQuestions();
@@ -87,7 +93,7 @@ myQuestions();
 // incr loss
 // incr index , test for end of game 
 
-$("#first-answer").on('click', function(){
+$("#correct-answer").on('click', function(){
     //console.log('That is your guess');
     if(arrayOfQuestions[index].correct == 1){
         console.log('correct');
