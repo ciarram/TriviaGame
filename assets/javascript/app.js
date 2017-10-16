@@ -80,14 +80,26 @@ correct.push(thirdQuestion.correctAnswer);
 correct.push(fourthQuestion.correctAnswer);
 console.log(correct);
 
-function myQuestions(){
-$("#question").append(arrayOfQuestions);
-$("#first-answer").append(correct[index].correctAnswer);
-$("#incorrect-answer").append(arrayOfQuestions[index].incorrectAnswer);
-$("#second-incorrect-answer").append(arrayOfQuestions[index].secondIncorrectAnswer);
-}
+firstIncorrect.push(firstQuestion.incorrectAnswer);
+firstIncorrect.push(secondQuestion.incorrectAnswer);
+firstIncorrect.push(thirdQuestion.incorrectAnswer);
+firstIncorrect.push(fourthQuestion.incorrectAnswer);
+console.log(firstIncorrect);
 
-myQuestions();
+secondIncorrect.push(firstQuestion.secondIncorrectAnswer);
+secondIncorrect.push(secondQuestion.secondIncorrectAnswer);
+secondIncorrect.push(thirdQuestion.secondIncorrectAnswer);
+secondIncorrect.push(fourthQuestion.secondIncorrectAnswer);
+console.log(secondIncorrect);
+
+// function myQuestions(){
+// $("#question").append(arrayOfQuestions);
+// $("#first-answer").append(correct);
+// $("#second-answer").append(firstIncorrect);
+// $("#third-answer").append(secondIncorrect);
+// }
+
+// myQuestions();
 
 //on timer
 // incr loss
