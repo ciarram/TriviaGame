@@ -4,31 +4,31 @@ $(document).ready(function(){
 
 //Timer
 
-var number = 5;
-    console.log(number);
-var numberHolder;
+// var number = 5;
+//     console.log(number);
+// var numberHolder;
 
-function stopQuestion(){
-    numberHolder = setInterval(decrement, 1000);
-    console.log(numberHolder);
-}
+// function stopQuestion(){
+//     numberHolder = setInterval(decrement, 1000);
+//     console.log(numberHolder);
+// }
 
-function decrement(){
-    number--;
-    console.log(number--);
-    //$("#timer").html("<h3>" + number + "</h3>");
-    if (number === 0) {
-        console.log(stop);
-        stop();
-    }
-}
-function timer(){
-    numberHolder = setInterval(decrement, 1000);
-    console.log(numberHolder);
-}
-function stop(){
-    clearInterval(numberHolder);
-}
+// function decrement(){
+//     number--;
+//     console.log(number--);
+//     //$("#timer").html("<h3>" + number + "</h3>");
+//     if (number === 0) {
+//         console.log(stop);
+//         stop();
+//     }
+// }
+// function timer(){
+//     numberHolder = setInterval(decrement, 1000);
+//     console.log(numberHolder);
+// }
+// function stop(){
+//     clearInterval(numberHolder);
+// }
 
 
 //Variables
