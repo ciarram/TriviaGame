@@ -1,5 +1,12 @@
+body{
+    background-color: rgba(158, 248, 242, 0.94);
+}
+h1{
+    text-align: center;
+}
 section{
     padding: 10px;
+    text-align: center;
 }
 #first-answer{
     padding: 10px;
