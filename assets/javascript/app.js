@@ -93,10 +93,12 @@ var endOfGame = 4;
 // console.log(secondIncorrect);
 
 function myQuestions(){
-$("#question").html(arrayOfQuestions);
-$("#first-answer").html(correct);
-$("#second-answer").html(firstIncorrect);
-$("#third-answer").html(secondIncorrect);
+for (var i = 0; i < arrayOfQuestions.length; i++){
+    $("#question").html(arrayOfQuestions[i]);
+}
+// $("#first-answer").html(correct);
+// $("#second-answer").html(firstIncorrect);
+// $("#third-answer").html(secondIncorrect);
 }
 
 myQuestions();
