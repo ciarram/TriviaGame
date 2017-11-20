@@ -96,12 +96,30 @@ function myQuestions(){
 for (var i = 0; i < arrayOfQuestions.length; i++){
     $("#question").html(arrayOfQuestions[i]);
 }
-// $("#first-answer").html(correct);
+ 
 // $("#second-answer").html(firstIncorrect);
 // $("#third-answer").html(secondIncorrect);
 }
+function correctAnswer(){
+    for (var j = 0; j < correct.length; j++){
+        $("#first-answer").html(correct[j]);
+    }
+}
+function firstIncorrectAnswer(){
+    for (var k = 0; k < correct.length; k++){
+        $("#second-answer").html(firstIncorrect[k]);
+    }
+}
+function secondIncorrectAnswer(){
+    for (var l = 0; l < correct.length; l++){
+        $("#third-answer").html(secondIncorrect[l]);
+    }
+}
 
 myQuestions();
+correctAnswer();
+firstIncorrectAnswer();
+secondIncorrectAnswer();
 
 //on timer
 // incr loss
@@ -126,6 +144,9 @@ if(index == endOfGame){
     index = 0;
 } 
  myQuestions();
+ correctAnswer();
+ firstIncorrectAnswer();
+ secondIncorrectAnswer();
    
 });
 
@@ -147,6 +168,9 @@ $('#second-answer').on('click', function(){
         index = 0;
     }
     myQuestions();
+    correctAnswer();
+    firstIncorrectAnswer();
+    secondIncorrectAnswer();
     
 });
 
@@ -166,6 +190,9 @@ $('#third-answer').on('click', function(){
         index = 0;
     }
     myQuestions();
+    correctAnswer();
+    firstIncorrectAnswer();
+    secondIncorrectAnswer();
     
 });
 
