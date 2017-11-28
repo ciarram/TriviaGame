@@ -93,27 +93,24 @@ var endOfGame = 4;
 // console.log(secondIncorrect);
 
 function myQuestions(){
-for (var i = 0; i < arrayOfQuestions.length; i++){
-    $("#question").html(arrayOfQuestions[i]);
-}
- 
-// $("#second-answer").html(firstIncorrect);
-// $("#third-answer").html(secondIncorrect);
+    var i = 0;
+    document.getElementById('question').innerHTML = arrayOfQuestions[i++];
+    console.log('question');
 }
 function correctAnswer(){
-    for (var j = 0; j < correct.length; j++){
-        $("#first-answer").html(correct[j]);
-    }
+    var i = 0;
+    document.getElementById('first-answer').innerHTML = correct[i++];
+    console.log('correct answer');
 }
 function firstIncorrectAnswer(){
-    for (var k = 0; k < correct.length; k++){
-        $("#second-answer").html(firstIncorrect[k]);
-    }
+    var i = 0;
+    document.getElementById('second-answer').innerHTML = firstIncorrect[i++];
+    console.log('incorrect');
 }
 function secondIncorrectAnswer(){
-    for (var l = 0; l < correct.length; l++){
-        $("#third-answer").html(secondIncorrect[l]);
-    }
+    var i = 0;
+    document.getElementById('third-answer').innerHTML = secondIncorrect[i++];
+    console.log('incorrect two');
 }
 
 myQuestions();
