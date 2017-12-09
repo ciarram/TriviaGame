@@ -36,12 +36,31 @@ var win = 0;
 var loss = 0;
 var unanswered = 0;
 var index = 0;
-var arrayOfQuestions = ["Who wrote Pride and Prejudice?", "Which Charles Dickens work has over 100 movie adaptations?", "When was the first Harry Potter book published?", "What is Florida author Zora Neale Hurston\s most famous work?"];
-var correct = ["Jane Austen", "A Christmas Carol", "1997", "Their Eyes Were Watching God"];
-var firstIncorrect = ["J.K. Rowling", "Great Expectations", "2010", "Mules and Men"];
-var secondIncorrect = ["Charlote Bronte", "Oliver Twist", "2001", "Jonah's Gourd Vine"];
+// var arrayOfQuestions = ["Who wrote Pride and Prejudice?", "Which Charles Dickens work has over 100 movie adaptations?", "When was the first Harry Potter book published?", "What is Florida author Zora Neale Hurston\s most famous work?"];
+// var correct = ["Jane Austen", "A Christmas Carol", "1997", "Their Eyes Were Watching God"];
+// var firstIncorrect = ["J.K. Rowling", "Great Expectations", "2010", "Mules and Men"];
+// var secondIncorrect = ["Charlote Bronte", "Oliver Twist", "2001", "Jonah's Gourd Vine"];
 var endOfGame = 4;
 
+var questionAndAnswers = [
+    {
+        question: "Who wrote Pride and Prejudice?",
+        answers: ["Jane Austen", "J.K. Rowling", "Charlote Bronte"],
+        correctAnswer: "Jane Austen"
+    }, {
+        question: "Which Charles Dickens work has over 100 movie adaptations?",
+        answers: ["Great Expectations", "Oliver Twist", "A Christmas Carol"],
+        correctAnswer: "A Christmas Carol"
+    }, {
+        question: "When was the first Harry Potter book published?", 
+        answers: ["2001", "1997", "2010"],
+        correctAnswer: "1997"
+    }, {
+        question: "What is Florida author Zora Neale Hurston\s most famous work?",
+        answers: ["Jonah's Gourd Vine", "Mules and Men", "Their Eyes Were Watching God"],
+        correctAnswer: "Their Eyes Were Watching God"
+    }
+]
 
 function myQuestions(){
     var i = 0;
