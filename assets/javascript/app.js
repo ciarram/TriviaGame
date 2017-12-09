@@ -77,14 +77,14 @@ $("#first-answer").on('click', function(){
     //console.log('That is your guess');
     if(correct){
         console.log('correct');
-        //wins++
-        //console.log(wins++);
-        //$("section").html("Correct!")
+        win++
+        console.log(win++);
+        $("section").append("Correct!")
     } else{
         console.log('incorrect');
-        //loss++
-        //console.log(loss++);
-        //$("section").html("Wrong! The correct answer is: ")
+        loss++
+        console.log(loss++);
+        $("section").html("Wrong! The correct answer is: ")
     }
     //index increment
     index++;
